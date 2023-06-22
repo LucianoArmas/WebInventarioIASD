@@ -3,10 +3,8 @@
   2- Frame
   3- Nav (Sign In)
   4- Form
-    4.1- Success (ELIMINAR??)
   5- Btn Sign In
   6- Forgot
-  7- Welcome (ELIMINAR)
 
 
 */
@@ -14,17 +12,6 @@
 
 /* 1-Gral */
 html, body * { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
-
-/*ELIMINAR DESDE*/
-/* body {
-  background:
-  linear-gradient(
-    rgba(246,247,249,0.8),
-    rgba(246,247,249,0.8)),
-    url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/sky-clouds-cloudy-mountain.jpg) no-repeat center center fixed;
-    background-size: cover;
-  } */
-/*ELIMINAR HASTA*/
 
 body{
   background: #e5e5e5;
@@ -109,23 +96,6 @@ li {
   cursor: pointer;
 }
 
-/*ELIMINAR DESDE*/
-/* .signup-active a {
-  cursor: pointer;
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: solid 2px #1059FF;
-  padding-bottom: 10px;
-}
-
-.signup-inactive a {
-  cursor: pointer;
-  color: rgba(255,255,255,.3);
-  text-decoration: none;
-  transition: all .25s ease;
-} */
-/*ELIMINAR HASTA*/
-
 
 /* 4- Form */
 .form-signin {
@@ -144,62 +114,6 @@ li {
   opacity: .0;
 }
 
-/*ELIMINAR DESDE*/
-/* .form-signup {
-  width: 430px;
-  height: 375px;
-	font-size: 16px;
-	font-weight: 300;
-  padding-left: 37px;
-  padding-right: 37px;
-  padding-top: 55px;
-  position: relative;
-  top: -375px;
-  left: 400px;
-  opacity: 0;
-  transition: all .5s ease;
-}
-
-.form-signup-left {
-  transform: translateX(-399px);
-  opacity: 1;
-}
-
-.form-signup-down {
-  top: 0px;
-  opacity: 0;
-} */
-/*ELIMINAR HASTA*/
-
-
-/* 4.1- Success */
-/*ELIMINAR DESDE????????*/
-/* .success {
-  width: 80%;
-  height: 150px;
-  text-align: center;
-  position: relative;
-  top: -890px;
-  left: 450px;
-  opacity: .0;
-  transition: all .8s .4s ease;
-}
-
-.success-left {
-  transform: translateX(-406px);
-  opacity: 1;
-}
-
-.successtext {
-  color: #ffffff;
-	font-size: 16px;
-	font-weight: 300;
-  margin-top: -35px;
-  padding-left: 37px;
-  padding-right: 37px;
-} */
-/*ELIMINAR HASTA????????*/
-
 #check path {
     stroke: #ffffff;
     stroke-linecap:round;
@@ -216,7 +130,7 @@ li {
     fill: rgba(255,255,255,.03);
 }
 
-.form-signin input/*, ELIMINAR DESDE*/ /*.form-signup input*/ /*ELIMINAR HASTA*/{
+.form-signin input{
   color: #ffffff;
   font-size: 13px;
 }
@@ -244,7 +158,7 @@ label {
 :focus {outline: none;
 }
 
-.form-signin input:focus, textarea:focus /* ,ELIMINAR DESDE*//*.form-signup input:focus /*ELIMINAR HASTA*/, textarea:focus {
+.form-signin input:focus, textarea:focus, textarea:focus {
     /* background: rgba(255,255,255,.3); */
     border: none; 
     padding-right: 40px;
@@ -336,25 +250,6 @@ label {
   margin-top: -1px;
 }
 
-/*ELIMINAR DESDE*/
-/* .btn-signup {
-  float: left;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 8px;
-  width: 100%;
-  height: 35px;
-	border: none;
-	border-radius: 20px;
-  margin-top: 23px;
-  background-color: #1059FF;
-} */
-/*ELIMINAR HASTA*/
-
-
 
 /* 5- Btn Sign In */
 .btn-signin {
@@ -396,7 +291,7 @@ label {
   background-color: rgba(255,255,255,1);
 }
 
-/*ELIMINAR DESDE*//*a.btn-signup:hover/*ELIMINAR HASTA*/ a.btn-signin:hover {
+a.btn-signin:hover {
     cursor: pointer; 
     background-color: #0F4FE6;
     transition: background-color .5s; 
@@ -434,130 +329,3 @@ label {
   text-decoration: none;
 }
 
-
-/* 7- Welcome */
-/*ELIMINAR DESDE*/
-/* .welcome {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  color: rgba(35,43,85,0.75);
-  opacity: 0;
-  transition: transform 1.5s ease .25s, opacity .1s ease 1s;
-}
-
-.welcome-left {
-  transform: translateY(-780px);
-  opacity: 1; 
-}
-
-.cover-photo {
-  height: 150px;
-  position: relative;
-  left: 0px;  top: -900px;
-  background:
-    linear-gradient(
-    rgba(35,43,85,0.75),
-    rgba(35,43,85,0.95)),
-    url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/landscape-nature-man-person.jpeg);
-  background-size: cover;
-  opacity: 0;
-  transition: all 1.5s ease 0.55s;
-}
-
-.cover-photo-down {
-  top: -575px;
-  opacity: 1;
-}
-
-.profile-photo {
-  height: 125px;
-  width: 125px;
-  position: relative;
-  border-radius: 70px;
-  left: 155px;
-  top: -1000px;
-  background: url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/nature-water-rocks-hiking.jpg);
-  background-size: 100% 135%;
-  background-position: 100% 100%;
-  opacity: 0;
-  transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-  border: solid 3px #ffffff;
-}
-
-.profile-photo-down {
-  top: -636px;
-  opacity: 1;
-}
-
-h1 {
-  color: #ffffff;
-  font-size: 35px;
-	font-weight: 300;
-  text-align: center;
-}
-
-.btn-goback {
-  position: relative;
-  margin-right: auto;
-  top: -400px;
-  float: left;
-  padding: 8px;
-  width: 83%;
-  margin-left: 37px;
-  margin-right: 37px;
-  height: 35px;
-	border-radius: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
-  text-align: center;
-  color: #1059FF;
-  margin-top: -8px;
-  border: solid 1px #1059FF;
-  opacity: 0;
-  transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-}
-
-.btn-goback-up {
-  top: -1080px;
-  opacity: 1;
-}
-
-a.btn-goback:hover {
-    cursor: pointer; 
-    background-color: #0F4FE6;
-    transition: all .5s; 
-    color: #ffffff;
-} */
-/*ELIMINAR HASTA*/
-
-
-
-/*ELIMINAR DESDE?????*/
-/* refresh button styling */
-
-/* #refresh {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; 
-    background-color: #ffffff;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    box-shadow: 0px 2px 7px rgba(0,0,0,0.1);
-    padding: 13px 0 0 13px;
-}
-
-.refreshicon {
-    fill: #d3d3d3;
-    transform: rotate(0deg);
-    transition: fill .25s ease, transform .25s ease;
-}
-
-.refreshicon:hover {
-  cursor: pointer;
-  fill: #1059FF;
-  transform: rotate(180deg);
-} */
-/*ELIMINAR HASTA??????*/
